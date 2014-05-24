@@ -22,11 +22,11 @@ The trial was comprised of 30 subjects who were measured while performing 6 acti
 5. Standing
 6. Laying
 
-    Name                            Description
-    ____________________________________________________________________________
-1	subject.id                      The ID of the subject in the study
-2	activity.name                   The activity the subject was performing
-3	activity.index                  An index value 1-6 matching to the activity names
+|ID |Name                            |Description                                      |
+|:--|:-------------------------------|:------------------------------------------------|
+|1	|subject.id                      |The ID of the subject in the study               |
+|2	|activity.name                   |The activity the subject was performing          |
+|3	|activity.index                  |An index value 1-6 matching to the activity names|
 
 ##Formula for understanding the following names
 
@@ -69,69 +69,71 @@ These signals were used to estimate variables of the feature vector for each pat
 >x, y, or z - the one-dimensional direction of the force
 
 
-4	mean.t.body.acc.mean.x          
-5	mean.t.body.acc.mean.y
-6	mean.t.body.acc.mean.z
-7	mean.t.gravity.acc.mean.x
-8	mean.t.gravity.acc.mean.y
-9	mean.t.gravity.acc.mean.z
-10	mean.t.body.acc.jerk.mean.x
-11	mean.t.body.acc.jerk.mean.y
-12	mean.t.body.acc.jerk.mean.z
-13	mean.t.body.gyro.mean.x
-14	mean.t.body.gyro.mean.y
-15	mean.t.body.gyro.mean.z
-16	mean.t.body.gyro.jerk.mean.x
-17	mean.t.body.gyro.jerk.mean.y
-18	mean.t.body.gyro.jerk.mean.z
-19	mean.t.body.acc.mag.mean
-20	mean.t.gravity.acc.mag.mean
-21	mean.t.body.acc.jerk.mag.mean
-22	mean.t.body.gyro.mag.mean
-23	mean.t.body.gyro.jerk.mag.mean
-24	mean.f.body.acc.mean.x
-25	mean.f.body.acc.mean.y
-26	mean.f.body.acc.mean.z
-27	mean.f.body.acc.jerk.mean.x
-28	mean.f.body.acc.jerk.mean.y
-29	mean.f.body.acc.jerk.mean.z
-30	mean.f.body.gyro.mean.x
-31	mean.f.body.gyro.mean.y
-32	mean.f.body.gyro.mean.z
-33	mean.f.body.acc.mag.mean
-34	mean.f.body.acc.jerk.mag.mean
-35	mean.f.body.gyro.mag.mean
-36	mean.f.body.gyro.jerk.mag.mean
-37	mean.t.body.acc.std.x
-38	mean.t.body.acc.std.y
-39	mean.t.body.acc.std.z
-40	mean.t.gravity.acc.std.x
-41	mean.t.gravity.acc.std.y
-42	mean.t.gravity.acc.std.z
-43	mean.t.body.acc.jerk.std.x
-44	mean.t.body.acc.jerk.std.y
-45	mean.t.body.acc.jerk.std.z
-46	mean.t.body.gyro.std.x
-47	mean.t.body.gyro.std.y
-48	mean.t.body.gyro.std.z
-49	mean.t.body.gyro.jerk.std.x
-50	mean.t.body.gyro.jerk.std.y
-51	mean.t.body.gyro.jerk.std.z
-52	mean.t.body.acc.mag.std
-53	mean.t.gravity.acc.mag.std
-54	mean.t.body.acc.jerk.mag.std
-55	mean.t.body.gyro.mag.std
-56	mean.t.body.gyro.jerk.mag.std
-57	mean.f.body.acc.std.x
-58	mean.f.body.acc.std.y
-59	mean.f.body.acc.std.z
-60	mean.f.body.acc.jerk.std.x
-61	mean.f.body.acc.jerk.std.y
-62	mean.f.body.acc.jerk.std.z
-63	mean.f.body.gyro.std.x
-64	mean.f.body.gyro.std.y
-65	mean.f.body.gyro.std.z
-66	mean.f.body.acc.mag.std
-67	mean.f.body.acc.jerk.mag.std
-68	mean.f.body.gyro.mag.std
-69	mean.f.body.gyro.jerk.mag.std
+|ID |Name                           |
+|:--|:-----------------------------:|
+|4	|mean.t.body.acc.mean.x         | 
+|5	|mean.t.body.acc.mean.y         |
+|6	|mean.t.body.acc.mean.z         |
+|7	|mean.t.gravity.acc.mean.x      |
+|8	|mean.t.gravity.acc.mean.y      |
+|9	|mean.t.gravity.acc.mean.z      |
+|10	|mean.t.body.acc.jerk.mean.x    |
+|11	|mean.t.body.acc.jerk.mean.y    |
+|12	|mean.t.body.acc.jerk.mean.z    |
+|13	|mean.t.body.gyro.mean.x        |
+|14	|mean.t.body.gyro.mean.y        |
+|15	|mean.t.body.gyro.mean.z        |
+|16	|mean.t.body.gyro.jerk.mean.x   |
+|17	|mean.t.body.gyro.jerk.mean.y   |
+|18	|mean.t.body.gyro.jerk.mean.z   |
+|19	|mean.t.body.acc.mag.mean       |
+|20	|mean.t.gravity.acc.mag.mean    |
+|21	|mean.t.body.acc.jerk.mag.mean  |
+|22	|mean.t.body.gyro.mag.mean      |
+|23	|mean.t.body.gyro.jerk.mag.mean |
+|24	|mean.f.body.acc.mean.x         |
+|25	|mean.f.body.acc.mean.y         |
+|26	|mean.f.body.acc.mean.z         |
+|27	|mean.f.body.acc.jerk.mean.x    |
+|28	|mean.f.body.acc.jerk.mean.y    |
+|29	|mean.f.body.acc.jerk.mean.z    |
+|30	|mean.f.body.gyro.mean.x        |
+|31	|mean.f.body.gyro.mean.y        |
+|32	|mean.f.body.gyro.mean.z        |
+|33	|mean.f.body.acc.mag.mean       |
+|34	|mean.f.body.acc.jerk.mag.mean  |
+|35	|mean.f.body.gyro.mag.mean      |
+|36	|mean.f.body.gyro.jerk.mag.mean |
+|37	|mean.t.body.acc.std.x          |
+|38	|mean.t.body.acc.std.y          |
+|39	|mean.t.body.acc.std.z          |
+|40	|mean.t.gravity.acc.std.x       |
+|41	|mean.t.gravity.acc.std.y       |
+|42	|mean.t.gravity.acc.std.z       |
+|43	|mean.t.body.acc.jerk.std.x     |
+|44	|mean.t.body.acc.jerk.std.y     |
+|45	|mean.t.body.acc.jerk.std.z     |
+|46	|mean.t.body.gyro.std.x         |
+|47	|mean.t.body.gyro.std.y         |
+|48	|mean.t.body.gyro.std.z         |
+|49	|mean.t.body.gyro.jerk.std.x    |
+|50	|mean.t.body.gyro.jerk.std.y    |
+|51	|mean.t.body.gyro.jerk.std.z    |
+|52	|mean.t.body.acc.mag.std        |
+|53	|mean.t.gravity.acc.mag.std     |
+|54	|mean.t.body.acc.jerk.mag.std   |
+|55	|mean.t.body.gyro.mag.std       |
+|56	|mean.t.body.gyro.jerk.mag.std  |
+|57	|mean.f.body.acc.std.x          |
+|58	|mean.f.body.acc.std.y          |
+|59	|mean.f.body.acc.std.z          |
+|60	|mean.f.body.acc.jerk.std.x     |
+|61	|mean.f.body.acc.jerk.std.y     |
+|62	|mean.f.body.acc.jerk.std.z     |
+|63	|mean.f.body.gyro.std.x         |
+|64	|mean.f.body.gyro.std.y         |
+|65	|mean.f.body.gyro.std.z         |
+|66	|mean.f.body.acc.mag.std        |
+|67	|mean.f.body.acc.jerk.mag.std   |
+|68	|mean.f.body.gyro.mag.std       |
+|69	|mean.f.body.gyro.jerk.mag.std  |
