@@ -1,7 +1,7 @@
 CodeBook.md
 ========================================================
 
-##Methodology
+#Methodology
 
 The data [UCI HAR Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) was extracted and feature names, activity names, and subjects were appended to the
 test and training sets.  Then, the test and training sets were combined to create on
@@ -9,9 +9,9 @@ data element.  Only mean and standard deviation calculated observations were ret
 Finally, the mean was applied to the grouping of subject and activity to create
 the final tidy dataset (tidy_dataset.csv).
 
-##Features
+#Features
 
-#Subject and Activity
+##Subject and Activity
 
 The trial was comprised of 30 subjects who were measured while performing 6 activities:
 
@@ -28,7 +28,7 @@ The trial was comprised of 30 subjects who were measured while performing 6 acti
 |2	|activity.name                   |The activity the subject was performing          |
 |3	|activity.index                  |An index value 1-6 matching to the activity names|
 
-##Formula for understanding the following names
+#Formula for understanding the following names
 
 >mean. - In this data, all the names begin with mean. This is indicating that this value is a
 mean of all of the observations of this type for each subject and activity that subject
@@ -38,7 +38,7 @@ The measurements for these features were originally derived from accelerometers 
 gyroscopes from 3-axial raw signals tAcc-XYZ and tGyro-XYZ, with XYZ referring to the
 three dimensions in space.
 
-#Time-Based or Fast Fourier Transformed
+##Time-Based or Fast Fourier Transformed
 
 >t. - Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). These 
 signals were captured at a constant rate of 50 Hz.
@@ -48,23 +48,29 @@ signals were captured at a constant rate of 50 Hz.
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-#Body vs. Gravity
+##Body vs. Gravity
 
 >body. - the acceleration signal was based on body movement
 
 >gravity. - the acceleration signal was based on gravity
 
-#Linear Acceleration vs. Angular Velocity
+##Linear Acceleration vs. Angular Velocity
 
 >acc.jerk. - jerk derived from accelerometer
 
 >gyro.jerk. - jerk derived from gyroscope
 
-#Magnitude
+##Magnitude
 
 >mag. - a calucation of the magintude of the three-dimensional signal calculated using the Euclidean norm.
 
-#Direction
+##Calculation
+
+>mean. - mean calculation of the observed values for the preceeding measurement
+
+>std. - standard deviation calculation of the observed values for the preceeding measurement
+
+##Direction
 
 >x, y, or z - the one-dimensional direction of the force
 
